@@ -1,5 +1,6 @@
 import ExpenseItems from "./ExpenseItems";
 import './Expenses.css';
+import Card from './Card';
 function Expenses(){
     const expenses = [
         {
@@ -26,14 +27,14 @@ function Expenses(){
         },
       ];
       return (
-        <div className="expenses">
+        <Card className="expenses">
             {expenses.map(data => <ExpenseItems 
             title={data.title}
             amount={data.amount}
             location={data.location}
             date={data.date}
          ></ExpenseItems>)}
-        </div>
+        </Card>
       )
 }
 
