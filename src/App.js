@@ -1,3 +1,6 @@
+import React from 'react';
+
+import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from "./components/Expenses/Expenses";
 
 const App = () => {
@@ -27,14 +30,7 @@ const App = () => {
   ];
   return (
     <div>
-      <h2>Let's Get Started</h2>
-      {/* {expenses.map(data => <Expenses
-      title={data.title}
-      amount={data.amount}
-      date={data.date}
-      location={data.location}
-      ></Expenses>)} */}
-      
+      <NewExpense />
       <Expenses items={expenses} />
     </div>
   )
