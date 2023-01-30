@@ -15,10 +15,6 @@ const ExpenseItems = (props) => {
        console.log(title);
     }
 
-    const deleteExpenseHandler = () =>{
-        console.log('Deleted');
-    }
-
     const editAmountHandler = () =>{
         setAmount('$100');
         console.log(amount);
@@ -30,7 +26,6 @@ const ExpenseItems = (props) => {
                 <ExpenseDate date={props.date}/>
                 <ExpenseDetails title={title} location={props.location} amount={amount}/>
                 <button onClick={clickHandler}>Change Title</button>
-                <button onClick={deleteExpenseHandler}>Delete Expense</button>
                 <button onClick={editAmountHandler}>change Amount</button>
             </Card>
         </li>
